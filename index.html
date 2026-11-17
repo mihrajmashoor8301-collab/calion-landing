@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALION — Unified Cybersecurity Ecosystem</title>
+  <meta name="description" content="CALION is an integrated cybersecurity platform combining hands-on offensive training, technical documentation, client-side security tools, and knowledge verification.">
+  <meta name="author" content="CALION">
+  <meta name="theme-color" content="#070a12">
+
+  <!-- Open Graph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://endlessus.in/">
+  <meta property="og:title" content="CALION — Unified Cybersecurity Ecosystem">
+  <meta property="og:description" content="Offensive & defensive cybersecurity mastery. Academy curriculum, technical library, zero-telemetry client-side tools, and assessment platform.">
+  <meta property="og:image" content="/assets/favicon.svg">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CALION — Unified Cybersecurity Ecosystem">
+  <meta name="twitter:description" content="Offensive & defensive cybersecurity mastery. Academy curriculum, technical library, zero-telemetry client-side tools, and assessment platform.">
+  <meta name="twitter:image" content="/assets/favicon.svg">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <!-- Ambient background glow -->
+  <div class="bg-ambient" aria-hidden="true"></div>
+
+  <div class="site-wrap">
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="#hero" class="brand" aria-label="CALION Home">
+          <div class="brand-icon">
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+              <path d="M8 11 L13 16 L8 21" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="16" y1="21" x2="24" y2="21" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span>CALION</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
+            <li><a href="#learning" class="nav-link">Learning</a></li>
+            <li><a href="#tools" class="nav-link">Tools</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a href="https://learning.endlessus.in" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+              <span>Academy</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+            <a href="https://tools.endlessus.in" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+              <span>Tools</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-links">
+          <li><a href="#ecosystem" class="mobile-nav-link">Ecosystem</a></li>
+          <li><a href="#learning" class="mobile-nav-link">Learning</a></li>
+          <li><a href="#tools" class="mobile-nav-link">Tools</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+        </ul>
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px;">
+          <a href="https://learning.endlessus.in" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Launch Academy</a>
+          <a href="https://tools.endlessus.in" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Launch Tools</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-pill">
+            <span class="pill-dot" aria-hidden="true"></span>
+            <span>Unified Cybersecurity Ecosystem</span>
+          </div>
+
+          <h1 class="hero-title">
+            Offensive & Defensive Security Mastery, <span class="text-gradient">Unified.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            CALION brings together hands-on offensive training, exhaustive technical documentation, client-side cryptographic analysis tools, and interactive knowledge assessments into one cohesive, privacy-first platform.
+          </p>
+
+          <div class="hero-cta">
+            <a href="https://learning.endlessus.in" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Explore Academy</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+            <a href="https://tools.endlessus.in" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Explore Tools</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+
+          <!-- Architecture Specs -->
+          <div class="spec-bar">
+            <div class="spec-item">
+              <span class="spec-val accent">Zero</span>
+              <span class="spec-lbl">Telemetry & Leakage</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-val">100%</span>
+              <span class="spec-lbl">Client-Side Crypto</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-val accent">13 Tools</span>
+              <span class="spec-lbl">Analysis Suite</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-val">Decoupled</span>
+              <span class="spec-lbl">Independent Architecture</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ecosystem Section -->
+      <section id="ecosystem" class="ecosystem-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Ecosystem Architecture</span>
+            <h2 class="section-title">One Brand. Independent Platforms.</h2>
+            <p class="section-desc">Each application in the CALION ecosystem operates independently on dedicated infrastructure for maximum uptime, isolation, and security.</p>
+          </div>
+
+          <!-- Primary 3 Live Applications -->
+          <div class="ecosystem-grid">
+            <!-- Academy Card -->
+            <div class="ecosystem-card">
+              <div class="card-top">
+                <span class="card-badge badge-live">● Live Platform</span>
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <h3 class="card-title">CALION Academy</h3>
+                <p class="card-desc">Structured cybersecurity training curriculum with hands-on labs, real-world attack chains, and operational defense tactics.</p>
+                <ul class="card-features">
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Curated offensive & defensive tracks</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Linux & Windows privilege escalation</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Interactive lab exercises and scenarios</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="card-domain">learning.endlessus.in</span>
+                <a href="https://learning.endlessus.in" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                  <span>Launch</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Library Card -->
+            <div class="ecosystem-card">
+              <div class="card-top">
+                <span class="card-badge badge-live">● Live Platform</span>
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                  </svg>
+                </div>
+                <h3 class="card-title">CALION Library</h3>
+                <p class="card-desc">Exhaustive technical documentation, penetration testing manuals, command cheat sheets, and downloadable PDF modules.</p>
+                <ul class="card-features">
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>27+ comprehensive technical documentation pages</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Nmap, Burp, Metasploit, Hydra command guides</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Pagefind instant full-text client-side search</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="card-domain">notes.endlessus.in</span>
+                <a href="https://notes.endlessus.in" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                  <span>Launch</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Tools Card -->
+            <div class="ecosystem-card">
+              <div class="card-top">
+                <span class="card-badge badge-live">● Live Platform</span>
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <h3 class="card-title">CALION Tools</h3>
+                <p class="card-desc">13 offline-capable browser utilities for cryptographic hashing, ReDoS-safe regex evaluation, subnetting, and JWT analysis.</p>
+                <ul class="card-features">
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Hardware-accelerated Web Crypto API hashes</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Dedicated Web Worker ReDoS timeout protection</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Zero network requests or telemetry leakage</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="card-domain">tools.endlessus.in</span>
+                <a href="https://tools.endlessus.in" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                  <span>Launch</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Platforms: Quiz & Portfolio -->
+          <div class="ecosystem-secondary-grid">
+            <!-- Quiz Card -->
+            <div class="ecosystem-card">
+              <div class="card-top">
+                <span class="card-badge badge-live">● Live Platform</span>
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                  </svg>
+                </div>
+                <h3 class="card-title">CALION Quiz Platform</h3>
+                <p class="card-desc">Interactive cybersecurity knowledge verification, skill assessments, and domain-specific challenge modules.</p>
+                <ul class="card-features">
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Timed knowledge evaluations and scenario quizzes</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Instant score feedback with technical explanations</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="card-domain">quiz.endlessus.in</span>
+                <a href="https://quiz.endlessus.in" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                  <span>Launch</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Portfolio Card -->
+            <div class="ecosystem-card">
+              <div class="card-top">
+                <span class="card-badge badge-planned">Planned Platform</span>
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                  </svg>
+                </div>
+                <h3 class="card-title">CALION Portfolio</h3>
+                <p class="card-desc">Engineer dossier, security research publications, vulnerability writeups, and architectural case studies.</p>
+                <ul class="card-features">
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Security engineering case studies and writeups</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Platform architecture blueprints and open research</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="card-domain">portfolio.endlessus.in</span>
+                <a href="https://portfolio.endlessus.in" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                  <span>Preview</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning Section -->
+      <section id="learning" class="learning-section">
+        <div class="container">
+          <div class="learning-layout">
+            <div class="learning-intro">
+              <span class="section-tag">Hands-On Curriculum</span>
+              <h2>Practical Security Learning Without the Fluff</h2>
+              <p>
+                CALION Academy rejects passive multiple-choice rote learning in favor of realistic offensive workflows, command-line proficiency, and root-cause defense analysis.
+              </p>
+              <p>
+                Master modern penetration testing methodologies, Linux and Active Directory privilege escalation paths, network enumeration, and web application exploitation.
+              </p>
+              <a href="https://learning.endlessus.in" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                <span>Start Learning on Academy</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+              </a>
+            </div>
+
+            <div class="learning-modules">
+              <div class="module-item">
+                <span class="module-num">01</span>
+                <div class="module-info">
+                  <h3>Reconnaissance & OSINT</h3>
+                  <p>Passive intelligence, DNS harvesting, ASN mapping, port enumeration, and defensive evasion strategies.</p>
+                </div>
+              </div>
+
+              <div class="module-item">
+                <span class="module-num">02</span>
+                <div class="module-info">
+                  <h3>Web Application Vulnerabilities</h3>
+                  <p>OWASP Top 10 vectors, authentication bypass, SQL/Command injection, SSRF, and REST API vulnerability testing.</p>
+                </div>
+              </div>
+
+              <div class="module-item">
+                <span class="module-num">03</span>
+                <div class="module-info">
+                  <h3>Privilege Escalation & AD</h3>
+                  <p>Linux capability abuse, SUID binaries, Active Directory Kerberos delegation, ACL abuse, and credential extraction.</p>
+                </div>
+              </div>
+
+              <div class="module-item">
+                <span class="module-num">04</span>
+                <div class="module-info">
+                  <h3>Defensive Hardening & Detection</h3>
+                  <p>Kernel auditing, auditd rules, network micro-segmentation, and zero-trust configuration baselines.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tools Section -->
+      <section id="tools" class="tools-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Client-Side Utilities</span>
+            <h2 class="section-title">Zero-Leakage Security Utilities</h2>
+            <p class="section-desc">13 standalone tools designed to run strictly within your browser environment. Your tokens, hashes, and inputs never touch a server.</p>
+          </div>
+
+          <div class="tools-grid">
+            <!-- Tool 1 -->
+            <div class="tool-preview-card">
+              <div class="tool-header">
+                <span class="tool-tag">Crypto</span>
+              </div>
+              <h3 class="tool-title">Cryptographic Hashes</h3>
+              <p class="tool-desc">Instant NIST SHA-1, SHA-256, SHA-384, and SHA-512 calculation via the hardware-accelerated Web Crypto API.</p>
+              <div class="tool-pill-list">
+                <span class="tool-micro-pill">SHA-256</span>
+                <span class="tool-micro-pill">SHA-512</span>
+                <span class="tool-micro-pill">Parallel</span>
+              </div>
+            </div>
+
+            <!-- Tool 2 -->
+            <div class="tool-preview-card">
+              <div class="tool-header">
+                <span class="tool-tag">Regex</span>
+              </div>
+              <h3 class="tool-title">ReDoS-Safe Regex Sandbox</h3>
+              <p class="tool-desc">Isolated Web Worker execution with automatic 1.5s hard termination to prevent catastrophic backtracking browser freezes.</p>
+              <div class="tool-pill-list">
+                <span class="tool-micro-pill">Web Worker</span>
+                <span class="tool-micro-pill">1.5s Cutoff</span>
+                <span class="tool-micro-pill">Capture Groups</span>
+              </div>
+            </div>
+
+            <!-- Tool 3 -->
+            <div class="tool-preview-card">
+              <div class="tool-header">
+                <span class="tool-tag">Identity</span>
+              </div>
+              <h3 class="tool-title">JWT Inspector</h3>
+              <p class="tool-desc">Client-side base64url header and payload decoder with claim interpretation and live expiration analysis.</p>
+              <div class="tool-pill-list">
+                <span class="tool-micro-pill">Base64URL</span>
+                <span class="tool-micro-pill">Claims</span>
+                <span class="tool-micro-pill">Zero Server</span>
+              </div>
+            </div>
+
+            <!-- Tool 4 -->
+            <div class="tool-preview-card">
+              <div class="tool-header">
+                <span class="tool-tag">Network</span>
+              </div>
+              <h3 class="tool-title">IPv4 Subnet Calculator</h3>
+              <p class="tool-desc">CIDR prefix calculation, wildcard masks, usable host capacity, and RFC 1918 / RFC 3021 classification.</p>
+              <div class="tool-pill-list">
+                <span class="tool-micro-pill">CIDR /0–/32</span>
+                <span class="tool-micro-pill">Wildcards</span>
+                <span class="tool-micro-pill">RFC 1918</span>
+              </div>
+            </div>
+
+            <!-- Tool 5 -->
+            <div class="tool-preview-card">
+              <div class="tool-header">
+                <span class="tool-tag">Encoding</span>
+              </div>
+              <h3 class="tool-title">Multi-Format Encoders</h3>
+              <p class="tool-desc">Bidirectional translation between Base64, URL-safe, Hexadecimal, HTML entities, and 8-bit binary representation.</p>
+              <div class="tool-pill-list">
+                <span class="tool-micro-pill">Base64</span>
+                <span class="tool-micro-pill">Hex</span>
+                <span class="tool-micro-pill">URL</span>
+                <span class="tool-micro-pill">Binary</span>
+              </div>
+            </div>
+
+            <!-- Tool 6 -->
+            <div class="tool-preview-card">
+              <div class="tool-header">
+                <span class="tool-tag">Recon</span>
+              </div>
+              <h3 class="tool-title">Nmap Command Generator</h3>
+              <p class="tool-desc">Tactical scan syntax builder with automated risk warnings for destructive NSE arguments and aggressive timing flags.</p>
+              <div class="tool-pill-list">
+                <span class="tool-micro-pill">SYN Scan</span>
+                <span class="tool-micro-pill">NSE Scripts</span>
+                <span class="tool-micro-pill">Risk Guard</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools-cta-box">
+            <h3>Explore All 13 Browser Security Tools</h3>
+            <p>Including Hash Identifier, Shannon Entropy Calculator, Hex Dump Viewer, JSON Validator, Port Directory, and Epoch Converter.</p>
+            <a href="https://tools.endlessus.in" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <span>Launch CALION Tools</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Core Philosophy</span>
+            <h2 class="section-title">Built with Purpose and Rigor</h2>
+            <p class="section-desc">CALION was engineered to overcome the common shortcomings of modern security portals: privacy compromises, single-point failures, and bloated architectures.</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <div class="about-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3>Privacy Without Exception</h3>
+              <p>Security practitioners deal with sensitive artifacts: cryptographic hashes, JWT tokens, IP subnets, and regex patterns. CALION Tools enforces client-side computation with strict CSP headers blocking external telemetry.</p>
+            </div>
+
+            <div class="about-card">
+              <div class="about-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+              </div>
+              <h3>Decoupled Resilience</h3>
+              <p>Rather than a brittle monolithic portal, CALION is partitioned into autonomous subdomains. Academy, Library, Tools, and Quiz each have their own repositories and deployment lifecycles, guaranteeing zero cross-platform disruption.</p>
+            </div>
+
+            <div class="about-card">
+              <div class="about-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+              <h3>Zero-Overhead Performance</h3>
+              <p>Every website in the ecosystem is compiled to static, highly optimized HTML, CSS, and JavaScript. Hosted globally at the Cloudflare edge, CALION loads instantly across all devices without database latency.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#hero" class="brand">
+              <div class="brand-icon">
+                <svg width="18" height="18" viewBox="0 0 32 32" fill="none">
+                  <path d="M8 11 L13 16 L8 21" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="16" y1="21" x2="24" y2="21" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span>CALION</span>
+            </a>
+            <p class="footer-desc">
+              The unified cybersecurity ecosystem for offensive operators, defensive analysts, and security engineers.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Ecosystem</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://learning.endlessus.in" class="footer-link footer-link-external" target="_blank" rel="noopener noreferrer">
+                  <span>Academy</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://notes.endlessus.in" class="footer-link footer-link-external" target="_blank" rel="noopener noreferrer">
+                  <span>Library</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://tools.endlessus.in" class="footer-link footer-link-external" target="_blank" rel="noopener noreferrer">
+                  <span>Tools</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://quiz.endlessus.in" class="footer-link footer-link-external" target="_blank" rel="noopener noreferrer">
+                  <span>Quiz Platform</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#ecosystem" class="footer-link">Ecosystem Overview</a></li>
+              <li><a href="#learning" class="footer-link">Curriculum Tracks</a></li>
+              <li><a href="#tools" class="footer-link">Utility Suite</a></li>
+              <li><a href="#about" class="footer-link">About CALION</a></li>
+              <li>
+                <a href="https://portfolio.endlessus.in" class="footer-link footer-link-external" target="_blank" rel="noopener noreferrer">
+                  <span>Portfolio (Planned)</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Architecture</h4>
+            <ul class="footer-links">
+              <li><span class="footer-link" style="cursor: default;">Static Edge Delivery</span></li>
+              <li><span class="footer-link" style="cursor: default;">Hardware Web Crypto</span></li>
+              <li><span class="footer-link" style="cursor: default;">Zero Remote Telemetry</span></li>
+              <li><span class="footer-link" style="cursor: default;">Decoupled Domains</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 CALION Security Ecosystem. All rights reserved.
+          </div>
+          <div class="footer-badges">
+            <span>Client-Side Security</span>
+            <span>•</span>
+            <span>Cloudflare Edge</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
